@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'main', url: 'https://github.com/brunoak/INF335-Jenkinsfile'
-                sh "cd meu-app; mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "cd trabalho05; mvn -Dmaven.test.failure.ignore=true clean package"
             }
 
             post {
